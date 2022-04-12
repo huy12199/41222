@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="number1" type="text">
+<input id="number2" type="text">
+<button onclick="ADD()">ADD</button>
+<button onclick="SUB()">SUB</button>
+<button onclick="MUL()">MUL</button>
+<button onclick="DIV()">DIV</button>
+
+</body>
+</html>
+
+<script>
+    function ADD(){
+       let a = +document.getElementById("number1").value
+       let b = +document.getElementById("number2").value
+        alert(a+b)
+    }
+    function SUB(){
+        let a = document.getElementById("number1").value
+        let b = document.getElementById("number2").value
+        alert(a-b)
+    }
+    function MUL() {
+        let a = document.getElementById("number1").value
+        let b = document.getElementById("number2").value
+        alert(a * b)
+    }
+    function DIV() {
+        let a = document.getElementById("number1").value
+        let b = document.getElementById("number2").value
+        alert(a / b)
+    }
+</script>
